@@ -1,7 +1,9 @@
 extern crate core;
 
 use std::env;
+use std::fs::File;
 use std::path::Path;
+use std::path::PathBuf;
 
 fn download_and_unzip(version: &str) -> std::path::PathBuf {
     let url = format!("http://dlib.net/files/dlib-{}.zip", version);
